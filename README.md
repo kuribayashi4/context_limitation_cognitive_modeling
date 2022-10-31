@@ -2,12 +2,14 @@
 requirements: 
 - python 3.8.5  
 - R 4.1.1
+- mecab 0.996
+- unidic dictionary (version is being checked...)
 
 WIP: data, surprisal files, model files
 
 `pip install requirements.txt`  
 `python preprocess/BE/get_sents.py > data/BE/sents.txt`  
-`cat data/BE/sents.txt | mecab -d /opt/local/lib/mecab/dic/unidic > data/BE/morph.tsv`  
+`cat data/BE/sents.txt | mecab -d UNIDIC_PATH > data/BE/morph.tsv`  
 `python preprocess/BE/add_annotation.py`  
 `python preprocess/BE/filter.py`  
 `python preprocess/BE/data_points4modeling.py`  
