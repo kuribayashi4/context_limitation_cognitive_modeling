@@ -3,9 +3,12 @@ requirements:
 - python 3.8.5  
 - R 4.1.1
 - mecab 0.996
-- unidic dictionary (version is being checked...)
+- unidic dictionary [unidic-mecab-211](https://clrd.ninjal.ac.jp/unidic/back_number.html)
 
-WIP: data, surprisal files, model files
+WIP: 
+- corpus data (copyright issues)
+- surprisal files (25GB)
+- model files (50GB)
 
 `pip install requirements.txt`  
 `python preprocess/BE/get_sents.py > data/BE/sents.txt`  
