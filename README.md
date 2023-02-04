@@ -1,4 +1,4 @@
-## Paper infoamtion
+## Paper information
 Context Limitations Make Neural Language Models More Human-Like (EMNLP2022)  
 paper: https://aclanthology.org/2022.emnlp-main.712/
 ```
@@ -42,10 +42,10 @@ Two choices to replicate our results:
 - surprisal files (`surprisals/`; 25GB)
 
 In either case, please contact `kuribayashi.research [at] gmail.com`  to get the necessary data to replicate.  
-We would provide the links to download them (due to server load considerations, the link is not publickly available).
+We would provide the links to download them (due to server load considerations, the link is not publicly available).
 
 ## Notes on the implementation details
-In our experiments using HuggingFace (HF) and vanilla LMs, we input the  $\mathrm{ < s > }$ token only when the context is empty (i.e. when $i = 0$) as per Eq. (1) in our paper.
+In our experiments using HuggingFace (HF) and vanilla LMs, we input the  $\mathrm{ < s > }$ token only when the context is empty (i.e., when $i = 0$) as per Eq. (1) in our paper.
 
 $$
 I_\mathrm{lossy}(w_i,c_{ < i})= -\log p_{\theta}(w_{i}| \mathrm{ < s > } \circ f([w_0, \cdots, w_{i-1}])) \space \space \space (1)
